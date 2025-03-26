@@ -17,7 +17,7 @@ Since this was my **first time working with Bash scripting and Crontab**, I coul
 - **Purpose**: Runs **hourly**, captures system **RAM usage**, and appends it to `ramlog.log`.
 - **Cron Job**: Executes `ramlog.sh` every hour.
   
-   ![Bash Script - RAM Log](/images/ramlog.sh.jpg)
+   ![Bash Script - RAM Log](images/ramlog.sh.jpg)
 
 ---
 
@@ -26,7 +26,7 @@ Since this was my **first time working with Bash scripting and Crontab**, I coul
 - **Purpose**: Sends the **RAM usage log file (`ramlog.log`)** as an email attachment at **midnight**.
 - **Cron Job**: Triggers the script daily at **12:00 AM**.
 
-   ![Bash Script - Send Email](/images/ram_mail.sh.jpg)
+   ![Bash Script - Send Email](images/ram_mail.sh.jpg)
 
 ---
 
@@ -35,28 +35,28 @@ Since this was my **first time working with Bash scripting and Crontab**, I coul
 - **Purpose**: Deletes `ramlog.log` at **12:02 AM** to ensure the file has been sent before being removed.
 - **Cron Job**: Runs **2 minutes past midnight**.
 
-   ![Bash Script - Delete Log](/images/del_log.sh.jpg)
+   ![Bash Script - Delete Log](images/del_log.sh.jpg)
 
 ---
 
 ## **Crontab Configuration**
 Here is the **Crontab** setup that schedules the three scripts:
 
-   ![Crontab Configuration](/images/crontab.jpg)
+   ![Crontab Configuration](images/crontab.jpg)
 
 ---
 
 ## **Email Output**
 At **midnight**, I receive an automated email containing the **RAM usage log** as an attachment.
 
-   ![Email Screenshot](/images/mail.jpg)
+   ![Email Screenshot](images/mail.jpg)
 
 ---
 
 ## **Sample Log File**
 Here is a sample log file that was automatically sent via email:
 
-📂 **[Click here to view the log file](/_home_ubuntu_ramlog_ramlog.log)**
+📂 **[Click here to view the log file](_home_ubuntu_ramlog_ramlog.log)**
 
 ---
 
